@@ -36,3 +36,63 @@ const userInfo = {
 
 
   Object.keys(userInfo).map((objkey)=>console.log(userInfo[objkey]));
+
+
+  console.log("b");
+
+  setTimeout(() => {
+    console.log("i am inside setTimeout");
+  }, 5000);
+
+  setInterval(() => {
+      console.log("i am inside setInterval");
+  }, 3000);
+
+
+  console.log("c");
+
+
+//   Swap variable  using es6
+let a=6;
+let c=10;
+[a,c]=[c,a];
+console.log(`a= ${a} and c= ${c}`);
+
+
+// mori and immutable js for persistent data structure
+
+// FUNCTIONAL programming for https://slidr.io/vakila/learning-functional-programming-with-javascript#31
+
+
+var exampleArray = [
+    "First item in the array",
+    "I'm the second item in this array",
+    "Obviously i'm the last item"
+  ];
+  console.table(exampleArray);
+
+  var arrayOfArrays = [
+    ["Phone", "Samsung"], 
+     ["Car", "Ferrari"], 
+     ["Sports", "Football"]
+];
+console.table(arrayOfArrays);
+
+function Employee(firstName, lastName, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+  }
+  var team = {};
+    team.leader = new Employee("Peter", "Eze", "peter@test.com");
+    team.manager = new Employee("Chris", "Nwamba", "chris@test.com");
+    team.writer = new Employee("William", "Imoh", "william@test.com");
+          
+  console.table(team, ["firstName"]);
+
+
+
+
+
+
+  
